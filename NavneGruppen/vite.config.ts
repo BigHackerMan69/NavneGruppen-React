@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   server: {
-    port: 5173, // Sæt det ønskede portnummer
-    open: '/MainPage.html', // Åbn MainPage.html som standard ved start
+    port: 5173, 
+    open: '/MainPage.html',
   },
 });
