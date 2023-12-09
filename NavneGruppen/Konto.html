@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Navnegruppen</title>
-        <link rel="stylesheet" href="Konto.css">
-    </head>
-    <body>
-        <div class="topnav" id="myTopnav">
-            <a href="MainPage.html">Home</a>
-            <a href="Konto.html">Konto</a>
-            <a href="LikedNames.html">Likede Navne</a>
-            <a href="ListOfNames.html"> Liste af Navne</a>
-            <a href="Swipe.html">Swipe</a>
-            <a href="Support.html">Support</a>
-            <a href="Settings.html">Settings</a>
-                <i class="fa fa-bars"></i>
-        </div>
+<head>
+    <title>Navnegruppen</title>
+    <link rel="stylesheet" href="Konto.css">
+    <script>
+        function redirectToOpretKonto() {
+            // Redirect til OpretKonto.html
+            window.location.href = "OpretKonto.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="MainPage.html">Home</a>
+        <a href="Konto.html">Konto</a>
+        <a href="LikedNames.html">Likede Navne</a>
+        <a href="ListOfNames.html"> Liste af Navne</a>
+        <a href="Swipe.html">Swipe</a>
+        <a href="Support.html">Support</a>
+        <a href="Settings.html">Settings</a>
+        <i class="fa fa-bars"></i>
+    </div>
 
-        <form action="/action_page.php">
-            <label for="uName">Brugernavn</label>
-            <input type="text" id="uName" name="uName"><br><br>
-            <label for="pWord">Kodeord</label>
-            <input type="text" id="pWord" name="pWord"><br><br>
-            <input type="submit" value="Log in">
-            <input type="submit" value="Opret Konto">
-        </form>
-    </body>
+    <form action="/action_page.php">
+        <label for="uName">Brugernavn</label>
+        <input type="text" id="uName" name="uName"><br><br>
+        <label for="pWord">Kodeord</label>
+        <input type="text" id="pWord" name="pWord"><br><br>
+        <input type="submit" value="Log in">
+        <input type="button" value="Opret Konto" onclick="redirectToOpretKonto()">
+    </form>
+</body>
 </html>

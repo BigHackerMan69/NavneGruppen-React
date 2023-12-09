@@ -1,11 +1,11 @@
 body {
-    background-color: gray;
+    background-color: #e6f7ff;
     display: flex;
+    align-items: center;
     justify-content: center;
     height: 100vh;
     margin: 0;
     position: relative;
-    align-items: center;
 }
 
 .topnav {
@@ -29,8 +29,8 @@ body {
 }
 
 .topnav a:hover {
-    background: silver;
-    color: black;
+    background: #555;
+    color: white;
 }
 
 .topnav a:active {
@@ -40,4 +40,45 @@ body {
 
 .topnav .icon {
     display: none;
+}
+
+.swipe-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.swipe-card {
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.swipe-card:hover {
+    transform: scale(1.02);
+}
+
+.thumb-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.fa-thumbs-down, .fa-thumbs-up {
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.dislike {
+    color: #ff6666;
+}
+
+.like {
+    color: #66cc66;
 }

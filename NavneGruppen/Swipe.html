@@ -1,21 +1,47 @@
 <!DOCTYPE html>
-<html>
-    <head>
-            <meta charset="UTF-8"/>
-            <title>Swipe</title>
-            <link rel="stylesheet" href="Swipe.css">
-    </head>
-    <body>
-        <div class="topnav" id="myTopnav">
-            <a href="MainPage.html">Home</a>
-            <a href="Konto.html">Konto</a>
-            <a href="LikedNames.html">Likede Navne</a>
-            <a href="ListOfNames.html"> Liste af Navne</a>
-            <a href="Swipe.html">Swipe</a>
-            <a href="Support.html">Support</a>
-            <a href="Settings.html">Settings</a>
-                <i class="fa fa-bars"></i>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Swipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="Swipe.css">
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="MainPage.html">Home</a>
+        <a href="Konto.html">Konto</a>
+        <a href="LikedNames.html">Likede Navne</a>
+        <a href="ListOfNames.html">Liste af Navne</a>
+        <a href="Swipe.html">Swipe</a>
+        <a href="Support.html">Support</a>
+        <a href="Settings.html">Settings</a>
+        <i class="fa fa-bars"></i>
+    </div>
+    
+    <div class="swipe-container" id="swipeContainer">
+        <!-- Swipe cards will be dynamically added here -->
+        <div class="swipe-card" id="card1">
+            <h2>Emma</h2>
+            <h3>Betydning: "Universel"</h3>
+            <p>Stammer fra: Tyskland</p>
+            <div class="thumb-icons">
+                <i class="fa fa-thumbs-down dislike" onclick="handleSwipe('left', 'card1')"></i>
+                <i class="fa fa-thumbs-up like" onclick="handleSwipe('right', 'card1')"></i>
+            </div>
         </div>
-        <h1>A</h1>
-    </body>
+
+        <div class="swipe-card" id="card2">
+            <h2>Liam</h2>
+            <h3>Betydning: "Vilhelm's beskytter"</h3>
+            <p>Stammer fra: Irland</p>
+            <div class="thumb-icons">
+                <i class="fa fa-thumbs-down dislike" onclick="handleSwipe('left', 'card2')"></i>
+                <i class="fa fa-thumbs-up like" onclick="handleSwipe('right', 'card2')"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="Swipe.js"></script>
+</body>
 </html>
